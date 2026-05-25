@@ -1,0 +1,389 @@
+/*UNIVERSAL SELECTOR  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  /* height: 100%; */
+  overflow-x: hidden;
+  color: white;
+  background-image: url(./images/background.jpg);
+  backdrop-filter: blur(3px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* NAV BAR STYLING */
+
+.navbarstyle {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  background-color: midnightblue;
+  padding: 20px;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  margin-top: 9px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: skyblue;
+  padding: 7px;
+  font-size: 1.25rem;
+}
+
+.navbar ul li a:link {
+  cursor: pointer;
+  color: rgb(30, 168, 41) !important;
+  /* transform: scale(1.15); */
+}
+
+.active-nav{
+  color: aquamarine !important;
+}
+
+.navbar ul li a:hover {
+  cursor: pointer;
+  color: rgb(30, 168, 41);
+}
+
+.navbar ul li a:visited {
+  cursor: pointer;
+  color: rgb(9, 175, 235);
+}
+
+.navbarstyle h3 {
+  border: 2.5px double skyblue;
+  outline: 2.5px double skyblue;
+  border-radius: 100%;
+  padding: 5.5px;
+}
+
+/* INDEX PAGE */
+
+.my-description {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  height: auto; /*FOCUS POINT TO PREVENT SCROLLING EFFECT*/
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2.5% 0px 0px;
+}
+
+.my-description section {
+  padding: 0px 5%;
+  width: 40%;
+  height: 100%;
+}
+
+.my-description span {
+  font-size: 35px;
+}
+
+.profile-pic {
+  border-radius: 20px;
+  border: 3.5px solid rgb(71, 63, 63);
+}
+
+footer {
+  background-color: rgb(6, 6, 58);
+  color: white;
+  position: fixed;
+  bottom: -174px;
+  width: 100%;
+}
+
+footer h3 {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: 700px;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+
+footer h3 span {
+  font-size: 1rem;
+}
+
+.contact {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  height: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2.5% 0px 0px;
+}
+.contact a {
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.contact a:hover {
+  transform: scale(1.2) ease;
+  border: 3px solid black;
+  background-color: rgb(155, 127, 255);
+  border-radius: 10px;
+}
+
+.contact a img {
+  border-radius: 100%;
+  color: aquamarine !important;
+}
+
+.contact a  {
+  color: aquamarine !important;
+}
+
+/* ABOUT ME */
+
+#about {
+  height: 100%;
+}
+
+.about-me {
+  text-align: center;
+  width: 100%;
+  /* height: auto; */
+  margin: 0.5%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.describe-self {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  height: 80%;
+  width: 100%;
+}
+
+.describe-self .text {
+  width: 35%;
+  height: 50vh;
+  border: 4px solid rgb(18, 18, 56);
+  border-radius: 15px;
+  padding: 2%;
+  background-color: rgb(10, 50, 88);
+  color: white;
+  margin: 2%;
+}
+
+/* .text h1{
+  font-size: ;FOCUS ON THE H1 TAGS ON UR BODY
+} */
+
+.describe-self .describe-image {
+  width: 35vw;
+  height: 50vh;
+  border: 4px solid rgb(18, 18, 56);
+  border-radius: 15px;
+  color: white;
+  margin: 2%;
+}
+
+.about-me section p {
+  font-size: 2.5vh;
+}
+
+.a1-1 img {
+  object-fit: fill;
+  object-position: center;
+  background: none;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+.a2-1 img {
+  object-fit: fill;
+  object-position: center;
+  background: none;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+.a3-1 img {
+  object-fit: fill;
+  object-position: center;
+  background: none;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+.a4-1 img {
+  object-fit: fill;
+  object-position: center;
+  background: none;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+.aboutMeFoot {
+  /* position: fixed;
+  bottom: 0px; */
+  width: 100%;
+  text-align: center;
+  padding: 2%;
+}
+
+.aboutMeFoot section {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin: 1%;
+}
+
+.aboutMeFoot section p {
+  background-color: rgb(48, 48, 97);
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 0.4%;
+}
+
+.aboutMeFoot h2 {
+  text-decoration: underline;
+}
+
+/* MY PROJECTS PAGE */
+
+.my-projects-title {
+  text-align: center;
+  border-radius: 15px;
+  margin: 1% auto;
+  width: 80%;
+  color: darkgrey;
+  background-color: black;
+}
+.my-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 55vh 55vh;
+  width: 90%;
+  margin: auto;
+  gap: 1% 5%;
+  height: auto;
+  grid-row: space-evenly;
+  grid-column: space-evenly;
+  padding: 3%;
+  /* margin-bottom: 2%; */
+}
+
+.my-projects section {
+  border-radius: 15px;
+  background-color: rgb(33, 104, 133);
+  width: auto;
+  height: 45vh;
+  border: 4px solid rgb(105, 102, 102);
+  outline: 7px solid black;
+}
+
+.my-projects section img {
+  width: 90%;
+  height: 70%;
+  margin: 5%;
+  border-radius: 15px;
+}
+.my-projects section a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.my-projects section h3 {
+  font-size: 1.3rem;
+  padding: 5px;
+  text-decoration: underline;
+}
+
+/* MEDIA QUERRIES */
+
+/* MY PROJECTS PAGE */
+@media screen and (max-width: 800px) {
+  .my-projects {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height:100vh;
+    margin: auto;
+    height: auto;
+    padding: 7%;
+    align-items: space-between;
+  }
+
+  .my-projects section{
+    margin-bottom: 10%;
+  }
+}
+
+/* HOME SCREEN */
+@media screen and (max-width: 700px) {
+  .my-description {
+    display: flex;
+    flex-flow: column nowrap;
+    height: auto;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0px;
+  }
+
+  .my-description section {
+    height: 30%;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  /* .my-description section img { */
+  /* } */
+
+  /* ABOUT ME */
+
+  .describe-self {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .describe-image,
+  .text {
+    width: 65vw !important;
+  }
+
+  .describe-image {
+    order: 1 !important;
+  }
+
+  .text {
+    width: 80vw !important;
+    order: -1 !important;
+    height: 34vh !important;
+    margin-bottom: 14% !important;
+  }
+
+  .about-me section h1 {
+    font-size: 4vh;
+  }
+}
