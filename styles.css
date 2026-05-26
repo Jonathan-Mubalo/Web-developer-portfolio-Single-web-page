@@ -104,7 +104,7 @@ footer {
   background-color: rgb(6, 6, 58);
   color: white;
   position: fixed;
-  bottom: -174px;
+  bottom: -300px;
   width: 100%;
 }
 
@@ -268,7 +268,7 @@ footer h3 span {
 
 /* MY PROJECTS PAGE */
 
-.my-projects-title {
+.my-projects-title, .my-about-me-title, .my-home-title {
   text-align: center;
   border-radius: 15px;
   margin: 1% auto;
@@ -279,10 +279,10 @@ footer h3 span {
 .my-projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 55vh 55vh;
+  grid-template-rows: repeat(4, 1fr);
   width: 90%;
   margin: auto;
-  gap: 1% 5%;
+  gap: 3%;
   height: auto;
   grid-row: space-evenly;
   grid-column: space-evenly;
