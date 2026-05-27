@@ -12,12 +12,6 @@ body {
   overflow-x: hidden;
   color: white;
   background-color: rgb(137, 137, 235);
-  /* background-image: url(./images/background.jpg);
-  backdrop-filter: blur(3px);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; */
 }
 
 /* NAV BAR STYLING */
@@ -52,22 +46,7 @@ ul {
 .navbar ul li a:hover {
   cursor: pointer;
   color: skyblue;
-  /* transform: scale(1.15); */
 }
-
-/* .active-nav {
-  color: aquamarine !important;
-} */
-
-/* .navbar ul li a:hover {
-  cursor: pointer;
-  color: rgb(30, 168, 41);
-} */
-
-/* .navbar ul li a:visited {
-  cursor: pointer;
-  color: rgb(9, 175, 235);
-} */
 
 .navbarstyle .logo {
   border: 2.5px double skyblue;
@@ -205,12 +184,6 @@ ul {
   background-color: rgb(39, 39, 148);
 }
 
-/* .my-projects-title p,
-.my-about-me-title p,
-.my-home-title p {
-  color: aquamarine;
-} */
-
 /* MY PROJECTS PAGE */
 
 .my-projects {
@@ -253,6 +226,7 @@ ul {
   margin: 5% 15%;
   border-radius: 15px;
 }
+
 .my-projects section a,
 footer section a {
   text-decoration: none;
@@ -266,7 +240,7 @@ footer section a {
   text-decoration: none;
 }
 
-/* FOOTER & DROP DOWN*/
+/* FOOTER AS A DROP DOWN*/
 
 button {
   background-color: transparent;
@@ -380,52 +354,21 @@ footer h3 span {
 
 /* MEDIA QUERRIES */
 
-/* HOME SCREEN */
-@media screen and (max-width: 700px) {
-  .my-description {
+/* MY PROJECTS PAGE */
+@media screen and (max-width: 800px) {
+  .my-projects {
     display: flex;
     flex-flow: column nowrap;
-    height: auto;
-    flex-direction: column;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 0px;
-  }
-
-  .my-description section {
-    display: flex;
-    flex-flow: column nowrap;
-    height: auto;
-    flex-direction: column;
-    justify-content: center !important;
-    align-items: center !important;
-  }
-
-  .my-description section {
-    height: 30%;
     width: 100%;
-    margin-bottom: 5%;
+    height: 100vh;
+    margin: auto;
+    height: auto;
+    padding: 7%;
+    align-items: space-between;
   }
 
-  /* .my-description section img { */
-  /* } */
-
-  /* MY PROJECTS PAGE */
-  @media screen and (max-width: 800px) {
-    .my-projects {
-      display: flex;
-      flex-flow: column nowrap;
-      width: 100%;
-      height: 100vh;
-      margin: auto;
-      height: auto;
-      padding: 7%;
-      align-items: space-between;
-    }
-
-    .my-projects section {
-      margin-bottom: 10%;
-    }
+  .my-projects section {
+    margin-bottom: 10%;
   }
 
   /* ABOUT ME */
@@ -456,4 +399,82 @@ footer h3 span {
   .about-me section h1 {
     font-size: 4vh;
   }
+}
+
+/* HOME SCREEN */
+
+@media screen and (max-width: 370px) {
+  .my-projects section {
+    border-radius: 15px;
+    background-color: rgb(23, 45, 119);
+    width: auto;
+    height: 45vh;
+    box-shadow: 3px 3px 10px black;
+    cursor: pointer;
+    filter: blur(0px);
+  }
+
+  .my-projects section img {
+    width: 90%;
+    height: 70%;
+    margin: 3% 5%;
+    border-radius: 15px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .my-description {
+    display: flex;
+    flex-flow: column nowrap;
+    height: auto;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0px;
+  }
+
+  .my-description section {
+    display: flex;
+    flex-flow: column nowrap;
+    height: auto;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .my-description section {
+    height: 34%;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 330px) {
+
+  /* ABOUT ME */
+
+  .text {
+    width: 80vw !important;
+    order: -1 !important;
+    height: auto !important;
+    margin-bottom: 14% !important;
+  }
+
+  /* NAVBAR STYLING */
+
+  .navbarstyle {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background-color: midnightblue;
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .navbarstyle .logo {
+    display: none;
+}
 }
