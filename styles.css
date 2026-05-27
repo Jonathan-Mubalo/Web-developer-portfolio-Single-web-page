@@ -74,8 +74,12 @@ ul {
 }
 
 .my-description span {
-  /* font-size: 35px; */
-  /* text-decoration: bold; */
+  font-size: 1.1rem; 
+ text-decoration: bold;
+}
+
+.my-description span, .my-description h1 .my-description h2{
+text-align: center;
 }
 
 .profile-pic {
@@ -355,7 +359,7 @@ footer h3 span {
 /* MEDIA QUERRIES */
 
 /* MY PROJECTS PAGE */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px){
   .my-projects {
     display: flex;
     flex-flow: column nowrap;
@@ -430,7 +434,7 @@ footer h3 span {
   }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 450px) {
 
   /* ABOUT ME */
 
