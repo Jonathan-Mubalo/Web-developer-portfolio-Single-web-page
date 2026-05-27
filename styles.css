@@ -52,7 +52,7 @@ ul {
   /* transform: scale(1.15); */
 }
 
-.active-nav{
+.active-nav {
   color: aquamarine !important;
 }
 
@@ -66,20 +66,20 @@ ul {
   color: rgb(9, 175, 235);
 }
 
-.navbarstyle h3 {
+.navbarstyle .logo {
   border: 2.5px double skyblue;
   outline: 2.5px double skyblue;
   border-radius: 100%;
   padding: 5.5px;
 }
 
-/* INDEX PAGE */
+/* HOME PAGE */
 
 .my-description {
   display: flex;
   flex-flow: row nowrap;
   width: 100%;
-  height: auto; /*FOCUS POINT TO PREVENT SCROLLING EFFECT*/
+  height: auto;
   justify-content: space-evenly;
   align-items: center;
   margin: 2.5% 0px 0px;
@@ -98,57 +98,6 @@ ul {
 .profile-pic {
   border-radius: 20px;
   border: 3.5px solid rgb(71, 63, 63);
-}
-
-footer {
-  background-color: rgb(6, 6, 58);
-  color: white;
-  position: fixed;
-  bottom: -300px;
-  width: 100%;
-}
-
-footer h3 {
-  text-align: center;
-  text-decoration: underline;
-  font-weight: 700px;
-  font-size: 1.3rem;
-  line-height: 1.5rem;
-}
-
-footer h3 span {
-  font-size: 1rem;
-}
-
-.contact {
-  display: flex;
-  flex-flow: row nowrap;
-  width: 100%;
-  height: auto;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 2.5% 0px 0px;
-}
-.contact a {
-  text-align: center;
-  text-decoration: none;
-  padding: 10px;
-}
-
-.contact a:hover {
-  transform: scale(1.2) ease;
-  border: 3px solid black;
-  background-color: rgb(155, 127, 255);
-  border-radius: 10px;
-}
-
-.contact a img {
-  border-radius: 100%;
-  color: aquamarine !important;
-}
-
-.contact a  {
-  color: aquamarine !important;
 }
 
 /* ABOUT ME */
@@ -240,35 +189,11 @@ footer h3 span {
   height: 100%;
 }
 
-.aboutMeFoot {
-  /* position: fixed;
-  bottom: 0px; */
-  width: 100%;
-  text-align: center;
-  padding: 2%;
-}
-
-.aboutMeFoot section {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  margin: 1%;
-}
-
-.aboutMeFoot section p {
-  background-color: rgb(48, 48, 97);
-  border: 2px solid black;
-  border-radius: 15px;
-  padding: 0.4%;
-}
-
-.aboutMeFoot h2 {
-  text-decoration: underline;
-}
-
 /* MY PROJECTS PAGE */
 
-.my-projects-title, .my-about-me-title, .my-home-title {
+.my-projects-title,
+.my-about-me-title,
+.my-home-title {
   text-align: center;
   border-radius: 15px;
   margin: 1% auto;
@@ -305,7 +230,8 @@ footer h3 span {
   margin: 5%;
   border-radius: 15px;
 }
-.my-projects section a {
+.my-projects section a,
+footer section a {
   text-decoration: none;
   color: white;
   text-align: center;
@@ -317,25 +243,119 @@ footer h3 span {
   text-decoration: underline;
 }
 
-/* MEDIA QUERRIES */
+/* FOOTER & DROP DOWN*/
 
-/* MY PROJECTS PAGE */
-@media screen and (max-width: 800px) {
-  .my-projects {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 100%;
-    height:100vh;
-    margin: auto;
-    height: auto;
-    padding: 7%;
-    align-items: space-between;
-  }
-
-  .my-projects section{
-    margin-bottom: 10%;
-  }
+button {
+  background-color: transparent;
+  border-radius: 5px;
+  width: 30px;
+  height: 20px;
 }
+/* .dropdown {
+  position: relative;
+  width: 100px;
+  height: auto;
+  background-color: rgb(33, 104, 133);
+  border-radius: 12px;
+} */
+
+#aboutMeFoot{
+  display: none;
+}
+
+footer {
+  background-color: rgb(6, 6, 58, 0.5);
+  border-radius: 12px;
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  bottom:-570px;
+  width:250px;
+  /* overflow-y: scroll;
+  overflow-x: hidden; */
+  scroll-behavior: smooth; 
+  height:auto;
+}
+
+footer::-webkit-scrollbar {
+    display: none;
+} 
+
+/* #aboutMeFoot div{
+  tect
+}
+  */
+footer h3 {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: 700px;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+
+footer h3 span {
+  font-size: 1rem;
+}
+
+.contact {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2.5% 0px 0px;
+}
+
+.contact a {
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.contact a:hover {
+  transform: scale(1.2) ease;
+  border: 3px solid black;
+  background-color: rgb(155, 127, 255);
+  border-radius: 10px;
+}
+
+.contact a img {
+  border-radius: 100%;
+  color: aquamarine !important;
+}
+
+.contact a  {
+  color: aquamarine !important;
+} 
+
+#aboutMeFoot {
+  text-align: center;
+  padding: 2%;
+}
+
+#aboutMeFoot section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  margin: 1%;
+}
+
+#aboutMeFoot section p {
+  background-color: rgb(48, 48, 97);
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 0.4%;
+  margin-bottom:2%;
+}
+
+
+#aboutMeFoot h2 {
+  text-decoration: underline;
+}
+
+/* MEDIA QUERRIES */
 
 /* HOME SCREEN */
 @media screen and (max-width: 700px) {
@@ -350,6 +370,15 @@ footer h3 span {
   }
 
   .my-description section {
+    display: flex;
+    flex-flow: column nowrap;
+    height: auto;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .my-description section {
     height: 30%;
     width: 100%;
     margin-bottom: 5%;
@@ -357,6 +386,24 @@ footer h3 span {
 
   /* .my-description section img { */
   /* } */
+
+  /* MY PROJECTS PAGE */
+  @media screen and (max-width: 800px) {
+    .my-projects {
+      display: flex;
+      flex-flow: column nowrap;
+      width: 100%;
+      height: 100vh;
+      margin: auto;
+      height: auto;
+      padding: 7%;
+      align-items: space-between;
+    }
+
+    .my-projects section {
+      margin-bottom: 10%;
+    }
+  }
 
   /* ABOUT ME */
 
