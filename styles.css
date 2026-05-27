@@ -403,25 +403,6 @@ footer h3 span {
 
 /* HOME SCREEN */
 
-@media screen and (max-width: 370px) {
-  .my-projects section {
-    border-radius: 15px;
-    background-color: rgb(23, 45, 119);
-    width: auto;
-    height: 45vh;
-    box-shadow: 3px 3px 10px black;
-    cursor: pointer;
-    filter: blur(0px);
-  }
-
-  .my-projects section img {
-    width: 90%;
-    height: 70%;
-    margin: 3% 5%;
-    border-radius: 15px;
-  }
-}
-
 @media screen and (max-width: 700px) {
   .my-description {
     display: flex;
@@ -449,7 +430,7 @@ footer h3 span {
   }
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 410px) {
 
   /* ABOUT ME */
 
@@ -477,4 +458,29 @@ footer h3 span {
   .navbarstyle .logo {
     display: none;
 }
+
+/* MY ABOUT ME IMAGES */
+
+.describe-image{
+  width: 80% !important;
+}
+
+/* MY PROJECTS STYLING */
+
+  .my-projects section {
+    border-radius: 15px;
+    background-color: rgb(23, 45, 119);
+    width: auto;
+    height: 45vh;
+    box-shadow: 3px 3px 10px black;
+    cursor: pointer;
+    filter: blur(0px);
+  }
+
+  .my-projects section img {
+    width: 90%;
+    height: 70%;
+    margin: 3% 5%;
+    border-radius: 15px;
+  }
 }
