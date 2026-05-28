@@ -425,6 +425,7 @@ footer h3 span {
     flex-direction: column;
     justify-content: center !important;
     align-items: center !important;
+    text-align: center;
   }
 
   .my-description section {
