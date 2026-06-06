@@ -74,12 +74,13 @@ ul {
 }
 
 .my-description span {
-  font-size: 1.1rem; 
- text-decoration: bold;
+  font-size: 1.1rem;
+  text-decoration: bold;
 }
 
-.my-description span, .my-description h1 .my-description h2{
-text-align: center;
+.my-description span,
+.my-description h1 .my-description h2 {
+  text-align: center;
 }
 
 .profile-pic {
@@ -356,10 +357,116 @@ footer h3 span {
   text-decoration: underline;
 }
 
+/* MY ANIMATION */
+h2 span{
+  font-size: 1.5rem !important;
+}
+
+.s1 {
+  animation-name: an1;
+  animation-duration: 3.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-direction: normal;
+  position: relative;
+}
+
+.s2 {
+  animation-name: an2;
+  animation-duration: 3.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-direction: normal;
+  position: relative;
+}
+
+.s3 {
+  animation-name: an3;
+  animation-duration: 3.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-direction: normal;
+  position: relative;
+}
+
+.s4 {
+  animation-name: an4;
+  animation-duration: 3.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-direction: normal;
+  position: relative;
+}
+
+.s5 {
+  animation-name: an5;
+  animation-duration: 3.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-direction: normal;
+  position: relative;
+}
+
+.s6 {
+  animation-name: an6;
+  animation-duration: 3.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-direction: normal;
+  position: relative;
+}
+
+@keyframes an1 {
+  0% {
+    top: 185px;
+    right: 160px;}
+ 
+  100% {
+    top: 0px;
+    right: 0px;
+  }
+}
+
+@keyframes an2 {
+  0% {
+    top: 185px;
+    left: 160px;
+  }
+
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}
+
+@keyframes an3 {
+  0% {
+    bottom: 185px;
+    left: 160px;
+  }
+
+  100% {
+    bottom: 0px;
+    left: 0px;
+  }
+}
+
+@keyframes an4 {
+  0% {
+    bottom: 185px;
+    rigth: 160px;
+  }
+
+  100% {
+    bottom: 0px;
+    rigth: 0px;
+  }
+}
+
 /* MEDIA QUERRIES */
 
 /* MY PROJECTS PAGE */
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
   .my-projects {
     display: flex;
     flex-flow: column nowrap;
@@ -436,7 +543,6 @@ footer h3 span {
 }
 
 @media screen and (max-width: 450px) {
-
   /* ABOUT ME */
 
   .text {
@@ -462,15 +568,15 @@ footer h3 span {
 
   .navbarstyle .logo {
     display: none;
-}
+  }
 
-/* MY ABOUT ME IMAGES */
+  /* MY ABOUT ME IMAGES */
 
-.describe-image{
-  width: 80% !important;
-}
+  .describe-image {
+    width: 80% !important;
+  }
 
-/* MY PROJECTS STYLING */
+  /* MY PROJECTS STYLING */
 
   .my-projects section {
     border-radius: 15px;
