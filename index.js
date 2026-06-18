@@ -1,14 +1,8 @@
 let dropdown = document.getElementById("dropdown");
-let footer = document.getElementById("aboutMeFoot");
+let footer = document.querySelector(".aboutMeFootHidden");
 
 dropdown.addEventListener("click",
      function enableMyDropDown() {
-    if( footer.style.display == "none"){
-        return footer.style.display = "block";
-    }
-    else {
-        return footer.style.display = "none";
-    }
-}
-, true);
+return footer.classList.toggle("aboutMeFootShown");
+}, true);
 

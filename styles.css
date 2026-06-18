@@ -8,7 +8,6 @@
 
 body {
   width: 100%;
-  /* height: 100%; */
   overflow-x: hidden;
   color: white;
   background-color: rgb(137, 137, 235);
@@ -97,7 +96,6 @@ ul {
 .about-me {
   text-align: center;
   width: 100%;
-  /* height: auto; */
   margin: 0.5%;
   display: flex;
   flex-flow: column nowrap;
@@ -123,10 +121,6 @@ ul {
   color: white;
   margin: 2%;
 }
-
-/* .text h1{
-  font-size: ;FOCUS ON THE H1 TAGS ON UR BODY
-} */
 
 .describe-self .describe-image {
   width: 35vw;
@@ -202,7 +196,6 @@ ul {
   grid-row: space-evenly;
   grid-column: space-evenly;
   padding: 3%;
-  /* margin-bottom: 2%; */
 }
 
 .my-projects section {
@@ -254,7 +247,6 @@ button {
   width: 40px;
   height: 20px;
   cursor: pointer;
-  /* margin-top: 105px; */
 }
 
 svg:hover {
@@ -264,10 +256,6 @@ svg:hover {
 svg {
   font-size: 2rem;
   color: rgb(163, 155, 197);
-}
-
-#aboutMeFoot {
-  display: none;
 }
 
 footer {
@@ -311,6 +299,14 @@ footer h3 span {
   margin: 2.5% 0px 0px;
 }
 
+.aboutMeFootHidden {
+  display: none;
+}
+
+.aboutMeFootShown{
+  display: block;
+}
+
 .contact a {
   text-align: center;
   text-decoration: none;
@@ -326,26 +322,26 @@ footer h3 span {
 
 .contact a img {
   border-radius: 100%;
-  color: aquamarine !important;
+  color: aquamarine;
 }
 
 .contact a {
-  color: aquamarine !important;
+  color: aquamarine;
 }
 
-#aboutMeFoot {
+.aboutMeFootHidden {
   text-align: center;
   padding: 2%;
 }
 
-#aboutMeFoot section {
+.aboutMeFootHidden section {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
   margin: 1%;
 }
 
-#aboutMeFoot section p {
+.aboutMeFootHidden section p {
   background-color: rgb(48, 48, 97);
   border: 2px solid black;
   border-radius: 15px;
@@ -353,7 +349,7 @@ footer h3 span {
   margin-bottom: 2%;
 }
 
-#aboutMeFoot h2 {
+.aboutMeFootHidden h2 {
   text-decoration: underline;
 }
 
@@ -467,6 +463,7 @@ h2 span{
 
 /* MY PROJECTS PAGE */
 @media screen and (max-width: 800px) {
+
   .my-projects {
     display: flex;
     flex-flow: column nowrap;
@@ -497,12 +494,11 @@ h2 span{
   }
 
   .describe-image {
-    order: 1 !important;
+    order: 1;
   }
 
   .text {
     width: 80vw !important;
-    order: -1 !important;
     height: 34vh !important;
     margin-bottom: 14% !important;
   }
@@ -547,9 +543,7 @@ h2 span{
 
   .text {
     width: 80vw !important;
-    order: -1 !important;
     height: auto !important;
-    margin-bottom: 14% !important;
   }
 
   /* NAVBAR STYLING */
